@@ -10,10 +10,6 @@ namespace BusinessLayer.Concrete
 {
     public class CategoryManager
     {
-        /*diyelim bir password belirleme işleminde 20den fazla karakter kullanılmaması kuralı
-         için veya kullanıcı adında rakam bulunmaması gibi konularda belirleyici kurallarla
-         yönetimi sağlamak için businesslayer kullanıcaz(crud işlemleri falan belki...)*/
-
 
         //gereric repository sınıfıma bağlı olarak üzerinde çalışıcağım sınıfı çağırıcam
         GenericRepository<Category> repo = new GenericRepository<Category> ();
@@ -35,6 +31,11 @@ namespace BusinessLayer.Concrete
             {
                 repo.Insert(p);
             }
+            
+        /*diyelim bir password belirleme işleminde 20den fazla karakter kullanılmaması kuralı
+         için veya kullanıcı adında rakam bulunmaması gibi konularda belirleyici kurallarla
+         yönetimi sağlamak için businesslayer kullanıcaz(crud işlemleri falan belki...)*/
+
         }
 
 
